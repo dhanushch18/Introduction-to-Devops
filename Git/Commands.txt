@@ -1,0 +1,88 @@
+1. Git Setup (Run Once)
+
+git config --global user.name "Your Name"
+git config --global user.email "your@example.com"
+
+These set your identity in Git globally.
+📁 2. Start a Git Project
+A. Initialize a local repo
+
+git init
+
+B. Clone an existing remote repo
+
+git clone https://github.com/user/repo.git
+
+📝 3. Staging and Committing
+A. Check status
+
+git status
+
+B. Stage files
+
+git add file.txt
+git add .             # Stage everything
+
+C. Commit changes
+
+git commit -m "Your commit message"
+
+🔄 4. Working with Branches
+A. Create a branch
+
+git branch feature-1
+
+B. Switch branch
+
+git checkout feature-1
+
+C. Create and switch
+
+git checkout -b feature-1
+
+D. Merge a branch
+
+git checkout main
+git merge feature-1
+
+⬆️ 5. Pushing and Pulling
+A. Connect remote (if not already)
+
+git remote add origin https://github.com/user/repo.git
+
+B. Push code to remote
+
+git push origin main      # Push main branch
+git push -u origin main   # Push & set upstream
+
+C. Pull latest from remote
+
+git pull origin main
+
+📜 6. Viewing History
+
+git log                # Show commit history
+git log --oneline      # Short view
+git show <commit_id>   # Details of a specific commit
+
+🧹 7. Undoing Changes
+A. Unstage a file
+
+git reset file.txt
+
+B. Discard local changes
+
+git checkout -- file.txt
+
+🔧 8. Useful Extras
+A. See all branches
+
+git branch
+
+B. Delete a branch
+
+git branch -d feature-1
+
+C. Rename current branch
+
+git branch -m new-name

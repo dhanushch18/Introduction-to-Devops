@@ -1,0 +1,123 @@
+1. File & Directory Commands
+
+Command	Description
+
+ls	List files and directories
+ls -l	Long listing (permissions, size, etc.)
+ls -a	Show hidden files
+cd	Change directory
+pwd	Print current directory
+mkdir <dir>	Create a new directory
+rm <file>	Delete a file
+rm -r <dir>	Delete a directory recursively
+cp <src> <dest>	Copy files or folders
+mv <src> <dest>	Move or rename files/folders
+touch <file>	Create an empty file
+cat <file>	View file contents
+more, less	View file contents page by page
+head -n <num> <file>	View first N lines
+tail -n <num> <file>	View last N lines
+
+
+🔍 2. File Permissions & Ownership
+
+
+Command	Description
+chmod +x file	Make file executable
+chmod 755 file	Set read/write/execute permissions
+chown user:group file	Change ownership
+ls -l	View permissions and ownership
+
+
+⚙️ 3. Package Management
+
+Ubuntu/Debian (apt)
+
+sudo apt update
+sudo apt upgrade
+sudo apt install <package>
+sudo apt remove <package>
+
+CentOS/RedHat (yum or dnf)
+
+sudo yum install <package>
+sudo yum update
+sudo yum remove <package>
+
+
+🧑‍💻 4. User & Group Management
+
+Command	Description
+whoami	Show current user
+id	Show user ID and group
+adduser <name>	Add new user
+passwd <name>	Set/change password
+sudo su	Become root user
+usermod -aG <group> <user>	Add user to a group
+
+
+🧠 5. Process Management
+
+
+Command	Description
+ps	Show current processes
+ps aux	Show all system processes
+top	Live CPU/memory process viewer
+htop	Enhanced top (must install)
+kill <PID>	Kill process by ID
+killall <name>	Kill process by name
+
+
+🌐 6. Network Commands
+
+
+Command	Description
+ping <host>	Check network connectivity
+curl <url>	Fetch web content
+wget <url>	Download files from web
+ifconfig or ip a	Show network interfaces
+netstat -tulpn	Show ports and services
+ss -tuln	Modern netstat alternative
+
+
+🗃️ 7. Archiving & Compression
+
+
+Command	Description
+tar -cvf file.tar dir/	Create .tar archive
+tar -xvf file.tar	Extract .tar file
+tar -czvf file.tar.gz dir/	Create .tar.gz archive
+tar -xzvf file.tar.gz	Extract .tar.gz
+
+
+🛠️ 8. Disk & Storage
+
+
+Command	Description
+df -h	Show disk usage (human-readable)
+du -sh *	Size of files in current directory
+mount, umount	Mount/Unmount devices
+lsblk	List block devices
+fdisk -l	List all partitions
+
+
+📜 9. Bash Scripting Basics
+
+#!/bin/bash
+echo "Hello, World"
+name="Dhanush"
+echo "Welcome, $name"
+if [ $name == "Dhanush" ]; then
+   echo "Access Granted"
+fi
+
+⌚ 10. Time, Date, System Info
+
+
+Command	Description
+date	Current date/time
+uptime	System uptime
+hostname	System hostname
+uname -a	Kernel & OS info
+free -h	RAM usage
+who	Logged-in users
